@@ -16,7 +16,6 @@
         android:visibility="visible">
 
         <LinearLayout
-            android:paddingTop="80dp"
             android:id="@+id/addressContainer"
             android:orientation="vertical"
             android:gravity="center"

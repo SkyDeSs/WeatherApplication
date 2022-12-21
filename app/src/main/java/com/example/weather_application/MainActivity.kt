@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
                 findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
             }
             catch (e: Exception) {
-                val toast: Toast = Toast.makeText(applicationContext, "Incorrect city", 5000)
+                val toast: Toast = Toast.makeText(applicationContext, "Something went wrong...", 5000)
                 toast.show()
             }
         }
