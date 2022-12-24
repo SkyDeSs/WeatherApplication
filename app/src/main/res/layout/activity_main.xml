@@ -160,7 +160,7 @@
                         android:id="@+id/humidity"
                         android:textSize="14sp"
                         android:textColor="#FFF"
-                        android:text="50%"
+                        android:text="---"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
 
@@ -351,8 +351,32 @@
                     android:background="#3CF1EBF1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/temperature"
+                        app:tint="#FFF">
+                    </ImageView>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content">
+                    </Space>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#FFF"
+                        android:text="Feels like">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/feelsTemp"
+                        android:textSize="14sp"
+                        android:text="---"
+                        android:textColor="#FFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-
+                    </TextView>
                 </LinearLayout>
                 <Space
                     android:layout_width="10dp"

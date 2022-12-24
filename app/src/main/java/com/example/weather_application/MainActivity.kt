@@ -60,6 +60,7 @@ class MainActivity : AppCompatActivity() {
                 val sunrise:Long = sys.getLong("sunrise")
                 val sunset:Long = sys.getLong("sunset")
                 val windSpeed = wind.getString("speed") + " m/s"
+                val feelsTemp = main.getString("feels_like") +"°C"
 
                 val weatherDescription = weather.getString("description")
                 val address = JSONObj.getString("name")+", "+sys.getString("country")
@@ -76,6 +77,7 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.wind).text = windSpeed
                 findViewById<TextView>(R.id.pressure).text = pressure
                 findViewById<TextView>(R.id.humidity).text = humidity
+                findViewById<TextView>(R.id.feelsTemp).text = feelsTemp
 
                 findViewById<RelativeLayout>(R.id.mainContainer).visibility = View.VISIBLE
             }
